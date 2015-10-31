@@ -10,8 +10,7 @@
     <!-- Bootstrap -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/dt-1.10.9,fh-3.0.0/datatables.min.css" />
-
-    <link href='https://fonts.googleapis.com/css?family=Lobster|Judson:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville|Lobster' rel='stylesheet' type='text/css'>
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" /> -->
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="theme.css" />
@@ -46,7 +45,6 @@
             <!--/.nav-collapse -->
         </div>
     </nav>
-
     <div id="main" class="container">
         <table id="balls" class="table table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
@@ -55,9 +53,8 @@
                     <th class="Date-cell">Date</th>
                     <th class="Theme-cell">Theme</th>
                     <th class="Dress Code-cell">Dress Code</th>
-                    <th class="Price (Non Dining)-cell">Price (Non Dining)</th>
-                    <th class="Price (Dining)-cell">Price (Dining)</th>
-                    <th class="Availability?-cell">Availability?</th>
+                    <th class="Price-cell">Price (Non-dining/dining)</th>
+                    <th class="Ticket Status-cell">Ticket Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -66,9 +63,8 @@
                     <td class="Date-cell">27/02/16</td>
                     <td class="Theme-cell">The Doors of Perception</td>
                     <td class="Dress Code-cell">Black Tie</td>
-                    <td class="Price (Non Dining)-cell">£95</td>
-                    <td class="Price (Dining)-cell">£135 (Sold out)</td>
-                    <td class="Availability?-cell">Tickets on General Sale</td>
+                    <td class="Price-cell">£95 / £135 (Sold out)</td>
+                    <td class="Availability?-cell">On General Sale</td>
                 </tr>
                 <tr>
                     <td class="Event-cell"><a href="http://www.queensball2016.com/">The Queens College Commemoration Ball</a>
@@ -76,9 +72,8 @@
                     <td class="Date-cell">24/06/16</td>
                     <td class="Theme-cell">-</td>
                     <td class="Dress Code-cell">White Tie</td>
-                    <td class="Price (Non Dining)-cell">-</td>
-                    <td class="Price (Dining)-cell">-</td>
-                    <td class="Availability?-cell">-</td>
+                    <td class="Price-cell">- / -</td>
+                    <td class="Availability?-cell">TBA</td>
                 </tr>
                 <tr>
                     <td class="Event-cell"><a href="http://lmhball.com/">LMH Ball</a>
@@ -86,9 +81,8 @@
                     <td class="Date-cell">07/05/16</td>
                     <td class="Theme-cell">The Final Element</td>
                     <td class="Dress Code-cell">Black Tie</td>
-                    <td class="Price (Non Dining)-cell">£11</td>
-                    <td class="Price (Dining)-cell">-</td>
-                    <td class="Availability?-cell">-</td>
+                    <td class="Price-cell">£95 / £135 (Sold out)</td>
+                    <td class="Availability?-cell">TBA</td>
                 </tr>
                 <tr>
                     <td class="Event-cell"><a href="http://www.hildasball.co.uk/">St Hildas Ball</a>
@@ -96,9 +90,8 @@
                     <td class="Date-cell">07/05/16</td>
                     <td class="Theme-cell">Seven Deadly Sins</td>
                     <td class="Dress Code-cell">Black Tie</td>
-                    <td class="Price (Non Dining)-cell">-</td>
-                    <td class="Price (Dining)-cell">-</td>
-                    <td class="Availability?-cell">-</td>
+                    <td class="Price-cell">£95 / £135 (Sold out)</td>
+                    <td class="Availability?-cell">TBA</td>
                 </tr>
                 <tr>
                     <td class="Event-cell"><a href="http://www.magdalenball.com/">The Magdalen Commemoration Ball</a>
@@ -106,8 +99,7 @@
                     <td class="Date-cell">25/06/16</td>
                     <td class="Theme-cell">-</td>
                     <td class="Dress Code-cell">White Tie</td>
-                    <td class="Price (Non Dining)-cell">£48</td>
-                    <td class="Price (Dining)-cell">-</td>
+                    <td class="Price-cell">£92 / £135 (Sold out)</td>
                     <td class="Availability?-cell">Tickets released end of Michaelmas</td>
                 </tr>
                 <tr>
@@ -115,8 +107,7 @@
                     <td class="Date-cell">07/05/16</td>
                     <td class="Theme-cell">New Orleans: The Jazz Age</td>
                     <td class="Dress Code-cell">Black Tie</td>
-                    <td class="Price (Non Dining)-cell">£39</td>
-                    <td class="Price (Dining)-cell">-</td>
+                    <td class="Price-cell">£85 / £135 (Sold out)</td>
                     <td class="Availability?-cell">Tickets released end of Michaelmas</td>
                 </tr>
                 <tr class="lastRow">
@@ -124,12 +115,12 @@
                     <td class="Date-cell">24/05/16</td>
                     <td class="Theme-cell">-</td>
                     <td class="Dress Code-cell">Black Tie</td>
-                    <td class="Price (Non Dining)-cell">£999</td>
-                    <td class="Price (Dining)-cell">-</td>
+                    <td class="Price-cell">£29 / £135 (Sold out)</td>
                     <td class="Availability?-cell">-</td>
                 </tr>
             </tbody>
         </table>
+        <p class="tablenote">If your ball isn't listed above please contact us at <a href="mailto:contact@oxfordballs.co.uk">contact@oxfordballs.co.uk</a>.</p>
     </div>
     <!-- /container -->
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>

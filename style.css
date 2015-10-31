@@ -2,18 +2,24 @@
     overflow-x: auto;
 }
 
-
 #contact {
-	font-size: 1.1em;
+    font-size: 1.1em;
 }
 
+.navbar-nav li {
+	font-size: 115%;
+}
 
 .oxford {
-    font-family: 'Judson', serif;
-    font-size: 1.9em;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5em;
 }
 
 .balls {
     font-family: 'Lobster', cursive;
-    font-size: 1.6em;
+    font-size: 1.7em;
+}
+
+.tablenote {
+	margin-top: 0.5em;
 }
