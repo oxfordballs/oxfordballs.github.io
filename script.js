@@ -13,10 +13,14 @@ $(document).ready(function() {
             "aTargets": [1],
             "mData": "date",
             "mRender": renderDate
+        }, {
+            "bSortable": false,
+            "aTargets": ["no-sort"]
         }],
         "order": [
             [1, "asc"]
         ]
+
 
     });
 });
