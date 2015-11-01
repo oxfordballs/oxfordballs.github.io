@@ -10,6 +10,10 @@
 	font-size: 115%;
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .oxford {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.5em;
