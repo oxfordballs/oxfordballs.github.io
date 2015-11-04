@@ -50,30 +50,42 @@
     <div id="contact" class="container">
         <p class="contactinfo">Oxford Balls is brought to you by three Oxford students with the aim of centralising information about upcoming balls, making it easier to decide which ones to go to. We will try to keep the information as up to date as possible, but can't do a perfect job so please let us know if you spot any mistakes or would like your college ball listed. We can be reached at <a href="mailto:contact@oxfordballs.co.uk">contact@oxfordballs.co.uk</a>. Please let your friends know about the website!
         </p>
-    </div>
-    <!-- /container -->
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//cdn.datatables.net/r/bs/dt-1.10.9,fh-3.0.0/datatables.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-    <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.9/sorting/datetime-moment.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        <div class="fb-like" data-href="https://www.facebook.com/OxfordBalls/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true">
+        </div>
+        <!-- /container -->
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cdn.datatables.net/r/bs/dt-1.10.9,fh-3.0.0/datatables.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+        <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.9/sorting/datetime-moment.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-40934457-2', 'auto');
-    ga('send', 'pageview');
-    </script>
+        ga('create', 'UA-40934457-2', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <div id="fb-root"></div>
+        <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=1547365582203839";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
 </body>
 
 </html>
