@@ -31,3 +31,11 @@ body {
 .contactinfo {
 	line-height: 1.6em;
 }
+
+.Year {
+    width: 35%;
+}
+
+.Colleges {
+    width: 65%;
+}
