@@ -39,3 +39,87 @@ body {
 .Colleges {
     width: 65%;
 }
+
+#balls {
+    font-size: 100%;
+    table-layout: auto;
+}
+
+#balls th, #balls td {
+    text-align: center;
+}
+
+#balls td {
+    vertical-align: middle;
+}
+
+#balls th:nth-of-type(1) { }
+#balls th:nth-of-type(2) { min-width: 4.7em; }
+#balls th:nth-of-type(3) { }
+#balls th:nth-of-type(4) { min-width: 7.5em; }
+#balls th:nth-of-type(5) { }
+#balls th:nth-of-type(6) { }
+    
+@media (max-width: 767px) {
+    #balls thead tr th:nth-of-type(2) { min-width: 0; }
+    #balls th:nth-of-type(4) { min-width: 0; }
+}
+
+#balls .row-sold {
+    background-color: #cacaca;
+/*    background-color: #d6d0d0; 
+    background-color: #e4cdcd;
+    background-color: #fbe0e0; */
+}
+
+#balls .row-sale {
+    background-color: /*#d6ffd6*/ #e6ffe6;
+}
+
+/* #balls th:nth-of-type(2), td:nth-of-type(2), th:nth-of-type(6), td:nth-of-type(6) {
+    text-align: center;
+} */
+
+.row-sold td:nth-of-type(6) span {
+    color: #800000;
+    font-weight: bold;
+}
+
+
+#balls .row-sale td:nth-of-type(6) {
+    vertical-align: middle;
+}
+
+.row-sale td:nth-of-type(6) a {
+    background: #d1ffd1;
+  background-image: -webkit-linear-gradient(top, #d1ffd1, #b5ffb5);
+  background-image: -moz-linear-gradient(top, #d1ffd1, #b5ffb5);
+  background-image: -ms-linear-gradient(top, #d1ffd1, #b5ffb5);
+  background-image: -o-linear-gradient(top, #d1ffd1, #b5ffb5);
+  background-image: linear-gradient(to bottom, #d1ffd1, #b5ffb5);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+    padding: 3px 6px 4px 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.row-sale td:nth-of-type(6) a:hover {
+    background: #b3ffb3;
+  background-image: -webkit-linear-gradient(top, #b3ffb3, #94ff94);
+  background-image: -moz-linear-gradient(top, #b3ffb3, #94ff94);
+  background-image: -ms-linear-gradient(top, #b3ffb3, #94ff94);
+  background-image: -o-linear-gradient(top, #b3ffb3, #94ff94);
+  background-image: linear-gradient(to bottom, #b3ffb3, #94ff94);
+    text-decoration: none;
+}
+
+#balls .release-date {
+    border: 1px solid black;
+    padding: 0px 3px 1px 3px;
+    display: inline-block;
+    color: #333;
+    font-weight: normal;
+}

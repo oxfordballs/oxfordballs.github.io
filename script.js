@@ -1,5 +1,5 @@
 function renderDate(data, type, full) {
-    return moment(data, "DD/MM/YYYY").format("LL");
+    return moment(data, "DD/MM/YYYY").format("ll");
 }
 
 jQuery.extend(jQuery.fn.dataTableExt.oSort, {
