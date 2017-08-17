@@ -27,6 +27,7 @@ body {
 
 .tablenote {
 	margin-top: 0.5em;
+    text-align: center;
 }
 
 .contactinfo {
@@ -181,10 +182,45 @@ body {
     text-decoration: underline;
 }
 
-/* #balls .release-date {
-    border: 1px solid black;
-    padding: 0px 3px 1px 3px;
-    display: inline-block;
-    color: #333;
-    font-weight: normal; */
+.fb-like {
+    margin-top: 15px;
+}
+
+.sponsors {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.qpay {
+    margin: 15px auto 30px;
+    padding: 15px 0 0;
+    border: solid 3px #ddd;
+    border-width: 1px 0px 2px;
+    max-width: 420px;
+}
+
+.qpay p {
+    margin: 0;
+}
+
+.qpay img {
+    margin-bottom: 5px;
+}
+
+.qpay-desc{
+    font-size: 12px;
+}
+
+.qpay-ref {
+    font-size: 13px;
+    margin: 16px 0 16px;
+}
+
+.charity-plug {
+    margin-top: 15px;
+}
+
+.charity-plug p {
+    text-align:center;
+    font-size:13px;
 }
