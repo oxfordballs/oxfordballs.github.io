@@ -5,18 +5,18 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://oxfordballs.co.uk/</loc>
-  <lastmod>2015-11-01T12:44:35+00:00</lastmod>
+  <loc>https://oxfordballs.co.uk/</loc>
+  <lastmod>2019-04-08T21:58:35+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://oxfordballs.co.uk/calendar.html</loc>
-  <lastmod>2015-11-01T12:44:35+00:00</lastmod>
+  <loc>https://oxfordballs.co.uk/calendar.html</loc>
+  <lastmod>2019-04-08T21:58:35+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://oxfordballs.co.uk/about.html</loc>
-  <lastmod>2015-11-01T12:44:35+00:00</lastmod>
+  <loc>https://oxfordballs.co.uk/about.html</loc>
+  <lastmod>2019-04-08T21:58:35+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 </urlset>
