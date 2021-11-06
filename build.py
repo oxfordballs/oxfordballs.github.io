@@ -28,10 +28,12 @@ values = result.get('values', [])
 rows = []
 
 for row in values:
+    print(row)
     event_name, date, theme, dress_code, prices, ticket_status, event_url, ticket_url, row_class = row
     if event_name == "":
       break
     print(event_name, date, theme, dress_code, prices, ticket_status, event_url, ticket_url)
+    
     rows.append({
       "event_name": event_name,
       "date": date,
