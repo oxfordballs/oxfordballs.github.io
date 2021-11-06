@@ -73,17 +73,56 @@
     <div id="main" class="container">
       <!-- <div class="tablebanner"><img src="https://via.placeholder.com/900x100.png?text=Your+banner+ad+here"></div> -->
       <div class="tablenote">
-        <!-- <p>
+        <p>
           If your ball is missing below or is incorrect, please fill out
           <a href="https://forms.gle/Qup3QwZihZpSTFwi7">this form</a> or email
           <a href="mailto:contact@oxfordballs.co.uk"
             >contact@oxfordballs.co.uk</a
           >
-        </p> -->
-
+        </p>
       </div>
       
-      {{ BALLS_TABLE }}
+      <table id="balls" class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th class="no-sort">Event</th>
+            <th>Date</th>
+            <th class="no-sort">Theme</th>
+            <th>Dress Code</th>
+            <th>
+              Price
+              <div class="diningtip">
+                (N / D)<span class="diningtiptext">Non-dining / Dining</span>
+              </div>
+            </th>
+            <th class="no-sort">Ticket Status</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for row in rows %}
+        <tr class="{{ row.class }}">
+          <td>
+            {% if row.event_url %}
+            <a target="_blank" href="{{ row.event_url }}">{{ row.event_name }}</a>
+            {% else %}
+            {{ row.event_name }}
+            {% endif %}
+          </td>
+          <td>{{ row.date }}</td>
+          <td>{{ row.theme }}</td>
+          <td>{{ row.dress_code }}</td>
+          <td>{{ row.prices }}</td>
+          <td>
+            {% if row.ticket_url %}
+            <a target="_blank" href="{{ row.ticket_url }}">{{ row.ticket_status }}</a>
+            {% else %}
+            {{ row.ticket_status }}
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
 
       <div
         class="fb-like"
@@ -94,27 +133,6 @@
         data-share="false"
       ></div>
 
-      <!-- <div class="sponsors">
-            <div><p>Sponsors:</p>
-            </div>
-            <div class="qpay">
-                <p>
-                <a target="_blank" href="https://getqpay.com"><img height="70px" src="/QPayLogo_square_clear.png"></a>
-                
-                <br><span class="qpay-desc">Ball Ticketing | Society Memberships | Stash</span></p>
-                
-                <div class="qpay-ref"><p>Student committees: <a target="_blank" href="http://goo.gl/JmZisD">Apply now for 2017-2018 sponsorship</a></p></div>
-            </div>
-        </div> -->
-      <!--
-        <div class="sponsor-plug" style="text-align: center; margin: 35px auto 30px; padding: 17px 0 6px; border: solid 3px #ddd; border-width: 1px 0px 2px; width: 44%;">
-            <p style="line-height: 1.5em">Sponsored by QPay - Ball ticketing, society memberships and stash<br>Attention student committees: <a target="_blank" href="https://getqpay.com/sponsorship/oxford">Apply now for 2017-2018 sponsorship</a>
-            </p>
-        </div>
-        -->
-      <!-- <div class="charity-plug">
-            <p>Oxford Balls supports the charity campaign <a target="_blank" href="https://www.facebook.com/whatsapound/">What's a Pound?</a>, which encourages balls to donate at least £1 from each ticket sold to charity.</p>
-        </div> -->
     </div>
     <!-- /container -->
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
