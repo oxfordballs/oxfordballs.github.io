@@ -99,28 +99,24 @@
           </tr>
         </thead>
         <tbody>
-        {% for row in rows %}
-        <tr class="{{ row.class }}">
+        
+        <tr class="">
           <td>
-            {% if row.event_url %}
-            <a target="_blank" href="{{ row.event_url }}">{{ row.event_name }}</a>
-            {% else %}
-            {{ row.event_name }}
-            {% endif %}
+            
+            <a target="_blank" href="http://worcesterball.com">Worcester College Commemoration Ball</a>
+            
           </td>
-          <td>{{ row.date }}</td>
-          <td>{{ row.theme }}</td>
-          <td>{{ row.dress_code }}</td>
-          <td>{{ row.prices }}</td>
+          <td>26/06/2020</td>
+          <td>theme</td>
+          <td>White Tie Optional</td>
+          <td>£195 / £240</td>
           <td>
-            {% if row.ticket_url %}
-            <a target="_blank" href="{{ row.ticket_url }}">{{ row.ticket_status }}</a>
-            {% else %}
-            {{ row.ticket_status }}
-            {% endif %}
+            
+            <a target="_blank" href="https://fixr.co/event/519805599">Available to Worcester</a>
+            
           </td>
         </tr>
-        {% endfor %}
+        
         </tbody>
       </table>
 
