@@ -11,7 +11,7 @@ build_dir = "build"
 os.mkdir(build_dir)
   
 service_account_info = json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_SECRET"])
-credentials = service_account.Credentials.from_service_account_info(service_account_info)
+creds = service_account.Credentials.from_service_account_info(service_account_info)
 
 service = build('sheets', 'v4', credentials=creds)
 
