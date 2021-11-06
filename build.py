@@ -11,7 +11,7 @@ SAMPLE_RANGE_NAME = 'Sheet1!A1:2'
 build_dir = "build"
 os.mkdir(build_dir)
 
-for f in ["about.html", "calendar.html", "favico.html", "index.html", "script.js", "sitemap.xml", "style.css", "theme.css"]:
+for f in ["about.html", "calendar.html", "favico.html", "index.html", "script.js", "sitemap.xml", "style.css", "theme.css", "CNAME"]:
   shutil.copy(f, build_dir)
 
 service_account_info = json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_SECRET"])
