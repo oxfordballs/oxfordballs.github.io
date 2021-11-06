@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Oxford Balls makes it easy to compare upcoming Oxford University college and society balls in Michaelmas, Hilary and Trinity terms. Order them based on price, date, dress code etc."
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Oxford Balls</title>
+    <!-- Bootstrap -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/r/bs/dt-1.10.9,fh-3.0.0/datatables.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Lobster|Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="theme.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"
+            ><span class="oxford">OXFORD</span
+            ><span class="balls"> Balls</span></a
+          >
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">2019&ndash;2020</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="main" class="container">
+      <!-- <div class="tablebanner"><img src="https://via.placeholder.com/900x100.png?text=Your+banner+ad+here"></div> -->
+      <div class="tablenote">
+        <!-- <p>
+          If your ball is missing below or is incorrect, please fill out
+          <a href="https://forms.gle/Qup3QwZihZpSTFwi7">this form</a> or email
+          <a href="mailto:contact@oxfordballs.co.uk"
+            >contact@oxfordballs.co.uk</a
+          >
+        </p> -->
+        <p>
+          Due to the COVID-19 outbreak, events for the 2019-2020 academic year have been cancelled or postponed. This page will be updated when more information is available.
+        </p>
+      </div>
+      
+
+      <div
+        class="fb-like"
+        data-href="https://www.facebook.com/OxfordBalls/"
+        data-layout="standard"
+        data-action="like"
+        data-show-faces="true"
+        data-share="false"
+      ></div>
+
+      <!-- <div class="sponsors">
+            <div><p>Sponsors:</p>
+            </div>
+            <div class="qpay">
+                <p>
+                <a target="_blank" href="https://getqpay.com"><img height="70px" src="/QPayLogo_square_clear.png"></a>
+                
+                <br><span class="qpay-desc">Ball Ticketing | Society Memberships | Stash</span></p>
+                
+                <div class="qpay-ref"><p>Student committees: <a target="_blank" href="http://goo.gl/JmZisD">Apply now for 2017-2018 sponsorship</a></p></div>
+            </div>
+        </div> -->
+      <!--
+        <div class="sponsor-plug" style="text-align: center; margin: 35px auto 30px; padding: 17px 0 6px; border: solid 3px #ddd; border-width: 1px 0px 2px; width: 44%;">
+            <p style="line-height: 1.5em">Sponsored by QPay - Ball ticketing, society memberships and stash<br>Attention student committees: <a target="_blank" href="https://getqpay.com/sponsorship/oxford">Apply now for 2017-2018 sponsorship</a>
+            </p>
+        </div>
+        -->
+      <!-- <div class="charity-plug">
+            <p>Oxford Balls supports the charity campaign <a target="_blank" href="https://www.facebook.com/whatsapound/">What's a Pound?</a>, which encourages balls to donate at least £1 from each ticket sold to charity.</p>
+        </div> -->
+    </div>
+    <!-- /container -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.datatables.net/r/bs/dt-1.10.9,fh-3.0.0/datatables.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.datatables.net/plug-ins/1.10.9/sorting/datetime-moment.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-40934457-2", "auto");
+      ga("send", "pageview");
+    </script>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src =
+          "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=1547365582203839";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+  </body>
+</html>
