@@ -28,7 +28,13 @@ values = result.get('values', [])
 rows = []
 
 for row in values:
-    print(row)
+    rowlen = len(row)
+    # sheets api drops empty cells
+    NCOLS = 9
+    if rowlen != NCOLS:
+        for _ in range(NCOLS - rowlen):
+          row.append("")
+    
     event_name, date, theme, dress_code, prices, ticket_status, event_url, ticket_url, row_class = row
     if event_name == "":
       break
