@@ -1,5 +1,6 @@
 import os
 import json
+import shutil
 
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
@@ -9,7 +10,10 @@ SAMPLE_RANGE_NAME = 'Sheet1!A1:2'
 
 build_dir = "build"
 os.mkdir(build_dir)
-  
+
+for f in ["about.html", "calendar.html", "favico.html", "index.html", "script.js", "sitemap.xml", "style.css", "theme.css"]:
+  shutil.copy(f, build_dir)
+
 service_account_info = json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_SECRET"])
 creds = service_account.Credentials.from_service_account_info(service_account_info)
 
