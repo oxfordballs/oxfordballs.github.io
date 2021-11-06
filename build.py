@@ -7,7 +7,7 @@ from googleapiclient.discovery import build
 from google.oauth2 import service_account
 
 SPREADSHEET_ID = "1Xxs0KaEaD3XgQdrlNxbg25qwG2YvoBdoRJsIdDZIjvw"
-SHEET_RANGE = 'Sheet1!A2:H100'
+SHEET_RANGE = 'Sheet1!A2:I100'
 
 build_dir = "build"
 os.mkdir(build_dir)
@@ -28,7 +28,7 @@ values = result.get('values', [])
 rows = []
 
 for row in values:
-    event_name, date, theme, dress_code, prices, ticket_status, event_url, ticket_url = row
+    event_name, date, theme, dress_code, prices, ticket_status, event_url, ticket_url, row_class = row
     if event_name == "":
       break
     print(event_name, date, theme, dress_code, prices, ticket_status, event_url, ticket_url)
@@ -41,7 +41,7 @@ for row in values:
       "ticket_status": ticket_status,
       "event_url": event_url,
       "ticket_url": ticket_url,
-      "class": ""
+      "class": row_class
     })
     
 template = Template(open('index.html').read())
