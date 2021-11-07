@@ -1,11 +1,21 @@
 function renderDate(data, type, full) {
+    if (data.length == 0) {
+        return "";
+    }
     return moment(data, "DD/MM/YYYY").format("ll");
 }
 
 jQuery.extend(jQuery.fn.dataTableExt.oSort, {
     "price-pre": function(a) {
+        if (a.length == 0) {
+            return 0;
+        }
         var x = a.split(" ")[0].substring(1);
-        return parseFloat(x);
+        var ret = parseFloat(x);
+        if (isNaN(ret)) {
+            return 0;
+        }
+        return ret;
     },
 
     "price-asc": function(a, b) {
@@ -38,8 +48,6 @@ $(document).ready(function() {
         "order": [
             [1, "asc"]
         ],
-
-
     });
 });
 
