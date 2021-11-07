@@ -18,7 +18,7 @@ jQuery.extend(jQuery.fn.dataTableExt.oSort, {
 });
 
 $(document).ready(function() {
-    $.fn.dataTable.moment('DD/MM/YY');
+    $.fn.dataTable.moment('DD/MM/YYYY');
 
     $('#balls').DataTable({
         "paging": false,
